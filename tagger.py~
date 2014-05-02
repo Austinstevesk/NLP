@@ -1,0 +1,6 @@
+import nltk
+
+def pos_tagger(train_set, tagger_classes, backoff=None):
+    for cls in tagger_classes:
+        backoff = cls(trainset, backoff=backoff)
+    return backoff
